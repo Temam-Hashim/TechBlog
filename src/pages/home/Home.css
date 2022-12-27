@@ -1,0 +1,9 @@
+.home {
+  width: 100%;
+}
+.noPost {
+  font-size: 18px;
+  color: red;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

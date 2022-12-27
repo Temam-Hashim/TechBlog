@@ -1,0 +1,116 @@
+.settings {
+  padding-top: 10px;
+  width: 100%;
+}
+.settingsWrapper {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infoBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+}
+
+.settingsDeleteTitle {
+  color: rgb(169, 62, 33);
+  font-size: 10px;
+  font-weight: 400;
+  border: 1px solid rgba(255, 98, 0, 0.361);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  align-self: flex-end;
+}
+.settingsDeleteTitle:hover {
+  background-color: pink;
+  color: black;
+}
+.settingTittle {
+  font-size: 22px;
+  color: rgb(140, 138, 138);
+  margin: 10px;
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+.deleteBtn {
+  width: 240px;
+  height: 40px;
+  font-style: italic;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 10px;
+}
+.userProfileForm {
+  -webkit-box-shadow: 2px 4px 10px 1px #999b9d1f;
+  box-shadow: 2px 4px 10px 1px #8c8a8978;
+  margin: 10px 20px 0px 30px;
+  padding: 5px;
+  width: 85%;
+}
+.inputs:focus {
+  outline: none;
+  border: none;
+}
+.userInputGroup {
+  margin: 10px 22px 10px 10px;
+  padding: 10px;
+}
+.labels {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(36, 148, 148);
+  margin: 5px;
+  padding: 5px;
+}
+.userProfileImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+.imagePP {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.submitBtn {
+  width: 140px;
+  background-color: rgb(37, 165, 165);
+  color: white;
+  margin: 12px 34px 12px 0px;
+  padding: 12px;
+}
+
+.submitBtn:hover {
+  color: black;
+  background-color: gold;
+}
+.cameraLabel {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Varela Round" sans-serif;
+  cursor: pointer;
+  position: absolute;
+  top: 400;
+  color: #f6f0f0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.imageIcon {
+  color: #baafaf;
+}
+.inputs {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+}

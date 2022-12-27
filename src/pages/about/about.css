@@ -1,0 +1,96 @@
+.about{
+ width:100%;
+ padding-bottom:10px;
+}
+@media only screen and (max-width: 768px) {
+  .topImage {
+     height: 30px;;
+  }
+}
+.views{
+  margin:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us, .mission,.vission{
+  background-color: #1f78c6;
+  border-radius: 20px;
+  margin-top: -20px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-bottom: 1px solid lightblue;
+  padding: 10px;
+}
+.about-us{
+   background-color: #1f78c6;
+}
+.mission{
+   background-color: #379220;
+}
+.vission{
+   background-color: #aa1fc6;
+}
+
+.main-title{
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600px;
+  color:white;
+  margin:10px 0;
+}
+.sub-title{
+  margin:10px 0;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color:rgb(39, 3, 105);
+}
+.desc{
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 600px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style:italic;
+  width:60%;
+  color:white;
+}
+.middleTitle{
+  font-size: 48px;
+  font-weight: 600;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style:italic;
+  line-height: 30px;;
+  color:rgb(24, 137, 208);
+}
+.bottom{
+  width:100%;
+  border-top: 1px solid #e4e4aa;
+  margin:20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.peopleTab{
+  color:rgb(19, 190, 228);
+  font-size: 12px;
+  font-weight: 600px;
+  font-style: italic;
+}
+.displayImage{
+  border-bottom:1px solid lightgray;
+}
+.people-image{
+  width:280px;
+  height:200px;
+  margin:10px;
+  border-radius: 12px;
+  object-fit: cover;
+}

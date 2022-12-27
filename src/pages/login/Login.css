@@ -1,0 +1,106 @@
+.login {
+  margin-top: 10px;
+  width: 100%;
+  background-image: url("https://picsum.photos/1000");
+  background-size: cover;
+}
+.loginPage {
+  -webkit-box-shadow: 2px 4px 10px 1px #999b9d1f;
+  box-shadow: 2px 4px 10px 1px #8c8a8978;
+  padding: 10px;
+  background-color: #434bdcb8;
+  margin: 20px 20px;
+  border-radius: 10px;
+}
+.loginForm {
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+.inputSets {
+  margin: 13px 0;
+}
+.inputIcon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: rgb(25, 146, 146);
+}
+.inputs {
+  height: 45px;
+}
+.loginTitle {
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(130, 127, 127);
+  font-family: "Varela Round" sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(236, 230, 230);
+}
+
+.loginBtn {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(14, 130, 130);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  align-self: center;
+}
+.loginBtn:disabled {
+  cursor: not-allowed;
+  background-color: gray;
+}
+.registerBtn {
+  width: 90%;
+  text-align: center;
+  background-color: rgb(14, 130, 130);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  margin: 10px 20px;
+}
+.tabContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabList {
+  border-radius: 10px;
+  border-bottom: 1px solid cyan;
+  text-align: center;
+  background-color: skyblue;
+  margin-top: 10px;
+}
+.tabListItem {
+  color: rgb(32, 32, 184);
+  font-weight: bold;
+  padding-left: 25px;
+}
+.forgot {
+  color: rgb(233, 51, 15);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: right;
+  width: 90%;
+  margin: 10px;
+}
+.error {
+  align-self: center;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: darkred;
+  border: 1px solid rgba(139, 0, 0, 0.132);
+}
