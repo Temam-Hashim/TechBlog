@@ -70,13 +70,13 @@ function TopBar() {
               ) : (
                 <>
                   <li className="nav-item dropdown">
-                    <button
+                    <span
                       className="nav-link dropdown-toggle"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       CREATE{" "}
-                    </button>
+                    </span>
                     <ul className="dropdown-menu">
                       <Link to="/write" className="Link">
                         <li>
