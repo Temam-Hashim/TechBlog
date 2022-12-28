@@ -41,13 +41,13 @@ function Update() {
   // get category
   useEffect(() => {
     const getCat = async () => {
-      const res = await axios.get("/category");
+      const res = await axios.get("/category/");
       setCategory(res.data);
     };
     getCat();
     // get tags
     const getTag = async () => {
-      const res = await axios.get("/tags");
+      const res = await axios.get("/tags/");
       setTag(res.data);
     };
     getTag();
@@ -79,7 +79,7 @@ function Update() {
 
       // upload image
       try {
-        await axios.post("/upload", data);
+        await axios.post("/upload/", data);
       } catch (error) {
         setError("Failed to upload image");
       }

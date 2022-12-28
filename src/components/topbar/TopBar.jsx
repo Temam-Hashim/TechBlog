@@ -3,7 +3,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
-import axios from "axios";
 
 function TopBar() {
   const PF = "http://localhost:5005/images/";
@@ -71,14 +70,13 @@ function TopBar() {
               ) : (
                 <>
                   <li className="nav-item dropdown">
-                    <a
+                    <button
                       className="nav-link dropdown-toggle"
-                      role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       CREATE{" "}
-                    </a>
+                    </button>
                     <ul className="dropdown-menu">
                       <Link to="/write" className="Link">
                         <li>

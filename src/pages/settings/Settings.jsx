@@ -34,7 +34,7 @@ export default function Settings() {
 
       //   // upload image
       try {
-        await axios.post("/upload", data);
+        await axios.post("/upload/", data);
       } catch (error) {
         setError("Failed to upload image");
       }

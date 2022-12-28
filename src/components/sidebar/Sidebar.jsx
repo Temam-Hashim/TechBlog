@@ -55,7 +55,7 @@ function Sidebar() {
         <div className="sidebarItem">
           <span className="sidebarTitle">CATEGORY</span>
           <ul className="sidebarLists">
-            {cats.map((cat) => (
+            {cats?.map((cat) => (
               <Link to={`/?cat=${cat.name}`} className="Link" key={cat._id}>
                 <li className="sidebarListItem">{cat.name}</li>
               </Link>
@@ -65,7 +65,7 @@ function Sidebar() {
         <div className="sidebarItem">
           <span className="sidebarTitle">Tags</span>
           <ul className="sidebarLists">
-            {tags.map((tag) => (
+            {tags?.map((tag) => (
               <Link to={`/?tag=${tag}`} className="Link" key={tag}>
                 <li
                   className="sidebarListItem"
@@ -81,7 +81,7 @@ function Sidebar() {
         <div className="sidebarItem" style={{ alignItems: "center" }}>
           <span className="sidebarTitle">LATEST POSTS</span>
           {/* latest post 1 */}
-          {latest.map((post) => (
+          {latest?.map((post) => (
             <div className="latestPostContainer" key={post._id}>
               <Link to={`/posts/${post._id}`} className="Link">
                 <h6 className="latestTitle">{post.title}</h6>

@@ -22,14 +22,14 @@ function Write() {
   // get category
   useEffect(() => {
     const getCat = async () => {
-      const res = await axios.get("/category");
+      const res = await axios.get("/category/");
       setCategory(res.data);
       // console.log(res.data);
     };
     getCat();
     // get tags
     const getTag = async () => {
-      const res = await axios.get("/tags");
+      const res = await axios.get("/tags/");
       setTag(res.data);
     };
     getTag();
@@ -60,7 +60,7 @@ function Write() {
 
       // upload image
       try {
-        await axios.post("/upload", data);
+        await axios.post("/upload/", data);
       } catch (error) {
         setError("Failed to upload image");
       }
@@ -68,7 +68,7 @@ function Write() {
 
     // upload post
     try {
-      const res = await axios.post("/posts", newPost);
+      const res = await axios.post("/posts/", newPost);
       alert("NEW POST ADDED");
       window.location.replace("/posts/" + res.data._id);
     } catch (error) {

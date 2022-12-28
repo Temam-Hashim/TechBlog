@@ -15,9 +15,10 @@ function Home() {
   useEffect(() => {
     const id = setInterval(() => {
       const fetchPosts = async () => {
-        const res = await axios.get("/posts" + search);
+        const res = await axios.get("/posts/" + search);
         setPosts(res.data);
       };
+
       fetchPosts();
     }, 400);
     return () => clearInterval(id);

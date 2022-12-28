@@ -58,7 +58,11 @@ function Footer() {
             <li className="list-items">
               <CopyrightIcon size={18} />
               2022
-              <a target="_blank" href="https://www.temxtech.66ghz.com">
+              <a
+                target="_blank"
+                href="https://www.temxtech.66ghz.com"
+                rel="noreferrer"
+              >
                 {" "}
                 temxtech{" "}
               </a>{" "}

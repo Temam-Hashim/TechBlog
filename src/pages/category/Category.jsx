@@ -6,7 +6,7 @@ const Category = () => {
   const handleCategory = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/category", { name: catName });
+      const res = await axios.post("/category/", { name: catName });
       if (res) {
         alert("category Inserted");
       }

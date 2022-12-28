@@ -7,7 +7,7 @@ function Header() {
   const [cats, setCats] = useState([]);
   useEffect(() => {
     const getCategory = async () => {
-      const res = await axios.get("/category");
+      const res = await axios.get("/category/");
       setCats(res.data);
     };
     getCategory();
@@ -104,7 +104,7 @@ function Header() {
       </div>
       <div className="topics row">
         <ul className="topicItems">
-          {cats.map((cat) => (
+          {cats?.map((cat) => (
             <Link
               to={`/?cat=${cat.name}`}
               // params={{ error: error }}
