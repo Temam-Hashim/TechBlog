@@ -15,26 +15,37 @@ import React from "react";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Context } from "./context/Context";
+import Spinner from "./components/spinner/Spinner.jsx";
+import { useEffect, useState } from "react";
 
 function App() {
   const { user } = React.useContext(Context);
+  const [isLoading, setIsLoading] = useState(true);
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 3000);
   return (
-    <BrowserRouter>
-      <TopBar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/write" element={user ? <Write /> : <Login />} />
-        <Route path="/update/:id" element={user ? <Update /> : <Login />} />
-        <Route path="/settings" element={user ? <Settings /> : <Login />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/posts/:postId" element={<Single />} />
-        <Route path="/category" element={user ? <Category /> : <Login />} />
-      </Routes>
-
-      <Footer />
-    </BrowserRouter>
+    <>
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <BrowserRouter>
+          <TopBar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/write" element={user ? <Write /> : <Login />} />
+            <Route path="/update/:id" element={user ? <Update /> : <Login />} />
+            <Route path="/settings" element={user ? <Settings /> : <Login />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/posts/:postId" element={<Single />} />
+            <Route path="/category" element={user ? <Category /> : <Login />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      )}
+    </>
   );
 }
 

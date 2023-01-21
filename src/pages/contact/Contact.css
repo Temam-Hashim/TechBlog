@@ -1,63 +1,72 @@
-.contact{
+.contact {
   -webkit-box-shadow: 2px 4px 10px 1px #999b9d1f;
-   box-shadow: 2px 4px 10px 1px #8c8a8978;
-   margin:10px;
-   padding:10px;
+  box-shadow: 2px 4px 10px 1px #8c8a8978;
+  margin: 10px;
+  padding: 10px;
+  background-image: url("https:picsum.photos/1000/500");
 }
-.meetUs{
-   -webkit-box-shadow: 2px 4px 10px 1px #999b9d1f;
-    box-shadow: 2px 4px 10px 1px #8c8a8978;
-    padding:10px;
-    background-color:#2830c8b8;
+.meetUs {
+  -webkit-box-shadow: 2px 4px 10px 1px #999b9d1f;
+  box-shadow: 2px 4px 10px 1px #8c8a8978;
+  padding: 10px;
+  background-color: #2830c8b8;
 }
-.contactForm{
-  margin:10px;
-  padding:10px;
+.contactForm {
+  margin: 10px;
+  padding: 10px;
 }
-.addresses{
-  margin:10px;
+.addresses {
+  margin: 10px;
   margin-top: 50px;
 }
-.addressLists{
-  margin:10px;
+.addressLists {
+  margin: 10px;
   font-weight: 400;
   font-style: italic;
-  padding:10px;
-  color:cyan;
+  padding: 10px;
+  color: cyan;
 }
-.contactUs{
-    -webkit-box-shadow: 2px 4px 10px 1px #999b9d1f;
-    box-shadow: 2px 4px 10px 1px #8c8a8978;
-    padding:10px;
-    background-color:rgb(7, 105, 81)
+.contactUs {
+  -webkit-box-shadow: 2px 4px 10px 1px #999b9d1f;
+  box-shadow: 2px 4px 10px 1px #8c8a8978;
+  padding: 10px;
+  background-color: #2830c8b8;
 }
 
-.title{
+.title {
   font-size: 24px;
   font-weight: bold;
-  color:rgb(244, 232, 232);
+  color: rgb(244, 232, 232);
   text-align: center;
-  border-bottom:1px solid gray;
+  border-bottom: 1px solid gray;
 }
-.submit{
-  width:160px;
-  background-color:rgb(180, 49, 49);
-  color:white;
+.submit {
+  width: 160px;
+  background-color: rgb(180, 49, 49);
+  color: white;
 }
-.meetIcon{
+.meetIcon {
   font-size: 18px;
   font-weight: bold;
-  border-radius:10px;
-  margin:5px;
-  padding:5px;
-  color:cyan;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  color: cyan;
 }
-.addressLists{
-  color:white;
+.addressLists {
+  color: white;
 }
-.inputs{
-  border-radius:10px;
+.inputs {
+  border-radius: 10px;
   height: 55px;
-  font-weight: 500px;
-  font-size: 16px;;
+  font-weight: 400px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid cyan;
+  align-self: center;
+}
+.inputs::placeholder {
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

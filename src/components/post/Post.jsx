@@ -4,10 +4,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 function Post({ post }) {
-  const PF = "http://localhost:5005/images/";
+  const PF = "https://techblogapi.onrender.com/images/";
   const [commentCount, setCommentCount] = useState(0);
-  // const [likeStatus, setLikeStatus] = useState([{ stat: false, id: "" }]);
-  // const [loveStatus, setLoveStatus] = useState([{ stat: false, id: "" }]);
 
   // get comment
   useEffect(() => {
@@ -28,9 +26,6 @@ function Post({ post }) {
     });
   };
 
-  let like = post.like;
-  let love = post.love;
-
   return (
     <div className="post">
       <div className="postInfo">
@@ -49,13 +44,6 @@ function Post({ post }) {
             </Link>
           </div>
         </div>
-        {/* <div className="postCats">
-          {post.tags.map((tag) => (
-            <Link to={`/?tag=${tag}`} className="Link" key={tag}>
-              <span className="postCat">{tag}</span>
-            </Link>
-          ))}
-        </div> */}
       </div>
       <Link to={`/posts/${post._id}`} className="Link">
         <img
@@ -82,12 +70,12 @@ function Post({ post }) {
         >
           <span className="love">
             <i className="fa fa-heart" onClick={handleLove}>
-              <small className="counter">{love}</small>
+              <small className="counter">{post.love}</small>
             </i>
           </span>
           <span className="like">
             <i className="fa fa-thumbs-up" onClick={handleLike}>
-              <small className="counter">{like}</small>
+              <small className="counter">{post.like}</small>
             </i>
           </span>
         </div>

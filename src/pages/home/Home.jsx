@@ -20,7 +20,7 @@ function Home() {
       };
 
       fetchPosts();
-    }, 400);
+    }, 100);
     return () => clearInterval(id);
   }, [search]);
 

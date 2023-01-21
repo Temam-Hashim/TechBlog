@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
 
 function TopBar() {
-  const PF = "http://localhost:5005/images/";
+  const PF = "https://techblogapi.onrender.com/images/";
   const { user, dispatch } = useContext(Context);
   const [search, setSearch] = useState("");
   const handleLogout = () => {

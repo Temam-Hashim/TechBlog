@@ -6,7 +6,7 @@ import axios from "axios";
 
 export default function Settings() {
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5005/images/";
+  const PF = "https://techblogapi.onrender.com/images/";
   const userRef = useRef();
   const emailRef = useRef();
   const mobileRef = useRef();

@@ -7,7 +7,7 @@ import { Context } from "../../context/Context";
 
 const SinglePost = () => {
   const { user } = useContext(Context);
-  const PF = "http://localhost:5005/images/";
+  const PF = "https://techblogapi.onrender.com/images/";
   const [singlePost, setSinglePost] = useState([]);
   const [comments, setComments] = useState([]);
   const [authorInput, setAuthorInput] = useState([]);

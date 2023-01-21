@@ -21,7 +21,7 @@ function Update() {
   const [error, setError] = useState("");
   const [post, setPost] = useState("");
 
-  const PF = "http://localhost:5005/images/";
+  const PF = "https://techblogapi.onrender.com/images/";
 
   // get the original post
   const location = useLocation();

@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { Context } from "../../context/Context";
 
 function Sidebar() {
-  const PF = "http://localhost:5005/images/";
+  const PF = "https://techblogapi.onrender.com/images/";
   const { user } = useContext(Context);
   const [latest, setLatest] = useState([]);
   const [cats, setCats] = useState([]);
