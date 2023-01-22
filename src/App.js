@@ -16,7 +16,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Context } from "./context/Context";
 import Spinner from "./components/spinner/Spinner.jsx";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const { user } = React.useContext(Context);
